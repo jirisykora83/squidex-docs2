@@ -107,3 +107,6 @@ You can also run and debug the backend with Visual Studio 2019. But here are som
 1. Recommended: Ensure that you `Squidex`which means that you use the integrated Kestrel web server, which starts faster than IIS Express.
 2. Recommended: Toggle off the `Launch browser` setting. You just want to keep Squidex open during development and not close and open the window all the time to make debugging the frontend with your browser easier.
 
+### Should know
+
+```Squidex.Areas.Frontend.Middlewares.WebpackMiddleware``` is connecting webpack frontned with backend and use by default port 3000. If you want / must change the port it must be done in ```Squidex.Areas.Frontend.Middlewares.WebpackMiddleware``` and also in a standard location with package.json and webpack config.
